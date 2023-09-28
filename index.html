@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Summit Speedsters</title>
+  <meta name="description" content="Summit Speedsters Auto Dealership">
+  <meta name="author" content="Matthew Amosa">
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <link href="css/styles.min.css" rel="stylesheet">
+
+  <!-- Fav icons stuff -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+
+</head>
+<body>
+
+  <div id="headerWrapper">
+    <header>
+      <a href="#"><img src="images/logo1x.png" alt="logo" width="50" height="50" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"></a>
+      <h1>Summit Speedsters</h1>
+      <div id="phone-link-container">
+        <a href="tel:+8001234567" class="phone-link">1-800-123-4567</a>
+      </div>
+    </header>
+  </div>
+
+  <div id="navWrapper">
+    <nav>
+      <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+      <ul id="primaryNav">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">TRUCKS</a></li>
+        <li><a href="#">CARS</a></li>
+        <li class="active"><a href="#">SERVICE</a></li>
+        <li><a href="#">LOGIN</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div id="mainWrapper">
+    <main>
+      <div class="parentHero">
+        <img src="images/hero.webp" width="1240" height="400" alt="Picture of a Tesla Roadster Sports Car">
+        <p>Ride in Style, Drive in Trust!</p>
+      </div>
+      <h1>Service</h1>
+      <p id="bodyP">Regular car servicing is key to responsible vehicle ownership, ensuring safety and longevity. It identifies and fixes issues early, preventing costly problems. Routine servicing improves fuel efficiency, reducing environmental impact and saving on fuel costs. Additionally, a well-documented service history enhances resale value, instilling buyer confidence and solidifying the investment in a reliable automobile.</p>
+      <section>
+        <div>
+          <h2>Oil Change</h2>
+          <img src="images/oil.svg" alt="Picture of car oil" width="100" height="100" loading="lazy">
+          <p>Keep your engine running smoothly with our expert oil change service.</p>
+          <a href="#">LEARN MORE</a>
+        </div>
+        <div>
+          <h2>Tire Rotation</h2>
+          <img src="images/tire.svg" alt="Picture of a car tire" width="100" height="180" loading="lazy">
+          <p>Extend the life of your tires and improve gas mileage with regular tire rotations.</p>
+          <a href="#">LEARN MORE</a>
+        </div>
+        <div>
+          <h2>Brake Inspection</h2>
+          <img src="images/brake.svg" alt="Picture of vehicles brake" width="100" height="100" loading="lazy">
+          <p>Ensure your safety by scheduling a comprehensive brake system inspection.</p>
+          <a href="#">LEARN MORE</a>
+        </div>
+        <div>
+          <h2>Auto Detailing</h2>
+          <img src="images/car-wash.svg" alt="Picture of a car being washed" width="100" height="100" loading="lazy">
+          <p>Restore your car's shine and cleanliness with our professional car detailing services.</p>
+          <a href="#">LEARN MORE</a>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="reviewWrapper">
+    <h2>What our Customers Say</h2>
+    <div id="cards"></div>
+  </div>
+  <!-- END OF MAIN WRAPPER -->
+
+  <footer>
+    <p>&copy; <span id="year">x</span> &bull; Matthew Amosa</p>
+  </footer>
+
+  <script src="js/scripts.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+header,
+nav,
+div#mainWrapper main div.parentHero img,
+main {
+  max-width: 1240px;
+  margin: auto;
+}
+
+header {
+  padding: 2rem $gutter;
+}
+
+// ----NAVIGATION---- //
+
+#primaryNav {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  button {
+    display: none;
+  }
+  ul,
+  ul.open {
+    display: flex;
+    border: none;
+    margin-left: 2vw;
+    justify-content: left;
+    font-size: 1.2rem;
+    font-weight: $boldWeight;
+  }
+}
+
+nav ul li {
+  border: none;
+}
+
+html body div#navWrapper nav ul#primaryNav {
+  padding-left: 0;
+}
+
+// HERO
+
+// CENTER BODY
+div#mainWrapper main p#bodyP {
+  margin: 0 $gutter;
+  padding-bottom: 1.2rem;
+  line-height: 2.1rem;
+  font-size: 1.6rem;
+}
+
+// MAIN CARD START //
+
+#mainWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainWrapper main {
+  margin: 0 $gutter;
+}
+
+#mainWrapper main section div {
+  width: calc(25% - 10px);
+  margin: 0;
+}
+
+div#mainWrapper main section div p {
+  font-size: 1.4rem;
+}

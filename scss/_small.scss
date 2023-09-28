@@ -1,0 +1,260 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  height: 100%;
+}
+
+/*---- apply a natural box layout model to all elements -------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: $defaultFont;
+  font-weight: $normalWeight;
+  color: $fontColor;
+  background-color: #f3f3f3;
+}
+
+#headerWrapper {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem $gutter;
+  gap: 8px;
+  h1 {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0.4rem;
+    padding-bottom: 0.1rem;
+    font-size: 1.2rem;
+    font-weight: $boldWeight;
+    flex-wrap: wrap;
+  }
+}
+
+#phone-link-container {
+  display: flex;
+  align-items: flex-end;
+  padding-right: 1rem;
+}
+
+.phone-link {
+  color: #ea0000;
+  text-decoration: none;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  padding-right: 20px;
+  margin-bottom: 0.2rem;
+  font-weight: $boldWeight;
+}
+
+// START OF NAVIGATION //
+div#navWrapper {
+  background-color: #ea0000;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav button {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.6rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-left: 0.5rem;
+}
+
+button span:nth-child(1) {
+  display: block;
+}
+button span:nth-child(2) {
+  display: none;
+}
+button.open span:nth-child(1) {
+  display: none;
+}
+button.open span:nth-child(2) {
+  display: block;
+}
+
+nav ul {
+  display: none;
+  border-top: solid 1px rgba(255, 255, 255, 0.3);
+}
+
+nav ul.open {
+  display: block;
+  padding-left: 0;
+  margin: 0;
+}
+
+nav ul li {
+  list-style: none;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+}
+
+nav ul li a {
+  display: block;
+  font-weight: $boldWeight;
+  padding: 0.9rem 2vw;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+nav ul li.active a {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+nav ul li a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+// ----END OF NAVIGATION---- //
+
+// --- HERO IMAGE & TEXT --- //
+.parentHero {
+  position: relative;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+  }
+  p {
+    position: absolute;
+    margin: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.9) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    text-align: center;
+    top: calc(96% - 30px);
+    width: 80%;
+    left: 10%;
+    font-size: 1.1rem;
+    padding: 0.2rem 0.6rem;
+    color: #000000;
+  }
+}
+
+main h1 {
+  padding: 0 1rem;
+  margin-left: 0.3rem;
+  margin-top: 0.9rem;
+  font-size: 1.2rem;
+}
+
+div#mainWrapper main p#bodyP {
+  color: #000000;
+  margin: 0 $gutter;
+  padding: 0 0.3rem;
+  line-height: 1.4rem;
+}
+
+#mainWrapper main section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.3rem;
+}
+
+#mainWrapper main section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid black;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+#mainWrapper main section div img {
+  max-width: 100%;
+  height: auto;
+}
+
+div#mainWrapper main section div p {
+  color: rgb(0, 0, 0);
+}
+
+#mainWrapper main section div a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-top: auto;
+  background-color: #ea0000;
+  color: white;
+  text-decoration: none;
+  font-weight: $boldWeight;
+}
+
+// END ALLCARDS
+
+// START OF REVIEWS
+
+div.reviewWrapper {
+  background-color: #f3f3f3;
+  padding: 1rem 0;
+  text-align: center;
+  img {
+    width: 20px;
+  }
+}
+
+#cards {
+  text-align: center;
+  padding: 1rem;
+  h3 {
+    border-top: 1px solid black;
+    margin: 1rem $gutter 0 $gutter;
+    text-align: center;
+    color: #000000;
+    font-weight: $boldWeight;
+    padding: 1rem;
+  }
+  section p {
+    margin-bottom: 2rem;
+  }
+}
+
+div.reviewWrapper div#cards section div img {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 0.1rem;
+  border-radius: 0.3rem;
+  margin: 0.1rem;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+// ----START OF FOOTER---- //
+footer {
+  border-top: 1px solid black;
+  text-align: center;
+  background-color: #ea0000;
+  margin: 0;
+  font-weight: $normalWeight;
+  padding: 1rem;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.9);
+  p {
+    margin: 0;
+  }
+}
