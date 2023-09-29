@@ -529,7 +529,7 @@ div#mainWrapper main section div p {
 }
 
 #mainWrapper main section div.bounce:hover img {
-  animation: myBounce 2s 1;
+  animation: myBounce 1.3s 1;
 }
 
 /* Pulse Animation */
