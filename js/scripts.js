@@ -17,7 +17,7 @@ for (let x = 0; x < reviews.length; x++) {
 
   for (let step = 0; step < starsCount; step++) {
     const revStar = document.createElement('img');
-    revStar.src = "../images/star.svg";
+    revStar.src = "images/star.svg";
     myRating.appendChild(revStar);
   }
 

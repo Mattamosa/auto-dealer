@@ -361,7 +361,7 @@ header h1 {
 }
 
 .phone-link {
-  color: #ea0000;
+  color: #ff6161;
   text-decoration: none;
   font-size: 1.1rem;
   white-space: nowrap;
@@ -610,6 +610,7 @@ div.reviewWrapper div#cards section div img {
 
 footer {
   border-top: 1px solid black;
+  color: white;
   text-align: center;
   background-color: #ea0000;
   margin: 0;
@@ -636,8 +637,6 @@ footer p {
     padding-right: 15px;
   }
   .phone-link {
-    color: rgb(255, 0, 0);
-    text-decoration: none;
     font-size: 25px;
     padding-right: 1px;
   }
@@ -666,7 +665,7 @@ footer p {
     padding-left: 1rem;
   }
   nav ul li.active a {
-    background-color: #ea0000;
+    background-color: #ff6161;
     color: #000000;
   }
   nav ul li a:hover {
