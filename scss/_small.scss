@@ -188,6 +188,7 @@ div#mainWrapper main p#bodyP {
 #mainWrapper main section div img {
   max-width: 100%;
   height: auto;
+  position: relative;
 }
 
 div#mainWrapper main section div p {
@@ -206,6 +207,76 @@ div#mainWrapper main section div p {
   color: white;
   text-decoration: none;
   font-weight: $boldWeight;
+}
+
+// MAIN CARDS CSS ANIMATIONS START
+
+/*  ANIMATIONS ON HOVER */
+#mainWrapper main section div.rotate:hover img {
+  animation: rotateOutDownLeft 1s forwards;
+}
+
+#mainWrapper main section div.spin:hover img {
+  animation: mySpin 1s 1;
+}
+
+#mainWrapper main section div.rollin:hover img {
+  animation: rollIn 1s forwards;
+}
+
+#mainWrapper main section div.bounce:hover img {
+  animation: myBounce 2s 1;
+}
+
+/* Pulse Animation */
+@keyframes rotateOutDownLeft {
+  from {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/* Spin Animation */
+@keyframes mySpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* RollIn Animation */
+@keyframes rollIn {
+  0% {
+    transform: translateX(-100%) rotate(-120deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* Bounce Animation */
+@keyframes myBounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 // END ALLCARDS
