@@ -532,7 +532,7 @@ div#mainWrapper main section div p {
   animation: myBounce 1.3s 1;
 }
 
-/* Pulse Animation */
+/* Rotate Animation */
 @keyframes rotateOutDownLeft {
   from {
     transform: rotate(0deg);
@@ -540,7 +540,7 @@ div#mainWrapper main section div p {
   }
   to {
     transform: rotate(45deg);
-    opacity: 0;
+    opacity: 0.5;
   }
 }
 /* Spin Animation */
